@@ -1,8 +1,7 @@
-Feature: Searching an keyword in google search engine
+Feature: Waffle Game Login
 
-  @testCase
-  Scenario: search famous personality
-    Given I open "http://www.google.com/ncr"
-    When I enter "selenium and cucumber" in search box
-    And I click search button
-    Then I should see the expected results
+  Scenario: Successful login to Waffle Game
+    Given I open the Waffle Game login page
+    When I fill in email and password
+    And I click the Login button
+    Then I should be logged in
